@@ -9,7 +9,9 @@ const copyright = document.querySelector('#copyright');
 const mediaSection = document.querySelector('#media-section');
 const information = document.querySelector('#description');
 
+
 const apod = document.querySelector("#image");
+const apod2 = document.querySelector("#image2");
 // const apod = document.getElementById("#image");
 
 //fetch api data
@@ -73,6 +75,7 @@ function displayMedia(data) {
         }
         //placing APOD json url into image source
             apod.src = data.url;
+            apod2.src = data.url;
     }catch {
 
         console.log("ERROR!Cannot display any text")

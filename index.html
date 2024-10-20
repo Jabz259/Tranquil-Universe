@@ -16,33 +16,41 @@
         <!-- Media Section -->
         <section id="rover-section">
             <!-- Images are appending in this container -->
-        </section>=
+        </section>
 
+
+    <section class="apod-container">
         <!-- header -->
-        <header>
-            <h1>Space Picture of the Day</h1>
-            <h4>Provided by Nasa</h4>
-        </header>
-
-        <!-- Where we add these images -->
-        <section class="">
+        <div>
+            <h1>Astronomy Picture of the Day</h1>
+        </div>
+        <!-- Title -->
+         <div>
             <h2 id="title"></h2>
-            <p id="date"></p>
-            <small id="copyright"></small>
-        </section>
-
+         </div>
         <!-- Media Section -->
-        <section id="media-section">
-            <div class="">
+        <section class="apod-media" id="media-section" >
                 <img id="image" src="" alt="image-by-nasa">
-            </div>
+
+                <div class="apod-info-container">
+                    <p id="description"></p>
+                </div>
+
         </section>
 
-        <!-- Description of video or text -->
-        <div class="">
-            <p id="description"></p>
+        <div class="end-info-container">
+            <h4>Provided by Nasa</h4>
+            <small id="copyright"></small>
+            <p id="date"></p>
         </div>
 
+
+        <!-- Description of video or text -->
+
+        
+    </section>
+
+    
         <!-- adding out scripts -->
         <script type="" src="apiKey.js"></script>
         <script type="" src="app.js"></script>

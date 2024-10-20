@@ -1,8 +1,67 @@
-
-.media-section {
- 
-}
-
 h1 {
     color: red;
 }
+
+.apod-container{
+    width: 50%;
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    background-color: yellow;
+}
+
+
+.apod-media{
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-start;
+    width: 100%; */
+    justify-content: center; /* centers flexed text horizontally */
+    border: 2px black solid;
+    align-items: center;
+    background-color: orange;
+
+}
+
+.apod-info-container {
+    margin: 10px;
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 55%;
+    overflow: auto;
+}
+
+.end-info-container {
+    text-align: center;
+}
+
+.apod-media img{
+    /* keep its size */
+    height: auto;
+    width: auto;
+    /* max height and width it can achieve */
+    max-height: 300px;
+    max-width: 350px;
+
+}
+
+h2{
+    margin: 5px;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
