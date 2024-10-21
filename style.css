@@ -1,8 +1,10 @@
-h1 {
-    color: red;
+.first-row{
+    display: flex;
+    flex-direction: row;
+
 }
 
-.apod-container{
+.card-container{
     width: 50%;
     display: flex;
     /* flex-flow: column wrap; */
@@ -10,7 +12,36 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
-    background-color: yellow;
+   
+}
+
+.fact-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40%;
+}
+
+.fact-text {
+    /* flex-flow: column wrap; */
+    height: 95%;
+    width: 95%;
+    /* min-height: 80%;
+    min-width: 80%;
+    max-height: 90%;
+    max-width: 95%; */
+    padding: 5px;
+    background-color: blue;
+}
+
+.placeholder {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: blue;
+
 }
 
 
@@ -26,6 +57,10 @@ h1 {
     align-items: center;
     background-color: orange;
 
+}
+
+.apod-background{
+    background-color: blue;
 }
 
 .apod-info-container {
@@ -51,8 +86,19 @@ h1 {
 
 }
 
+h1{
+    font-size: 35px;
+}
+
+.title{
+    margin: auto;
+}
+
 h2{
-    margin: 5px;
+}
+
+h4{
+    margin: auto;
 }
 
 p {

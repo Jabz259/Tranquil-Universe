@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tranquil Universe</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -19,42 +19,69 @@
         </section>
 
 
-    <section class="apod-container">
-        <!-- header -->
-        <div>
-            <h1>Astronomy Picture of the Day</h1>
-        </div>
-        <!-- Title -->
-         <div>
-            <h2 id="title"></h2>
-         </div>
-        <!-- Media Section -->
-        <section class="apod-media" id="media-section" >
-                <img id="image" src="" alt="image-by-nasa">
+        <section class="first-row">
+            
+            <section class="card-container apod-background">
+                <!-- header -->
+                <h1>Astronomy Picture of the Day</h1>
+                <h4>Provided by Nasa</h4>
 
-                <div class="apod-info-container">
-                    <p id="description"></p>
+                <!-- Title -->
+                <div>
+                    <h2 id="title"></h2>
                 </div>
+
+                <!-- Media Section -->
+                <section class="apod-media" id="media-section">
+                    <img id="image" src="" alt="image-by-nasa">
+                    <div class="apod-info-container">
+                        <p id="description"></p>
+                    </div>
+                </section>
+
+                <div class="end-info-container">
+                    <small id="copyright"></small>
+                    <p id="date"></p>
+                </div>
+
+                <!-- Description of video or text -->
+            </section>
+
+
+        <section class="card-container fact-container">
+                <!-- header -->
+            <div class="fact-text"> 
+                <h1>Astronomy Fact of the Day</h1>
+                <h2>Did you know??</h4>
+                <h2 id="astronomy-fact"> </h2>
+            </div>
+            
+
+            <div class="placeholder">
+                <h1>Astronomy Fact of the Day</h1>
+                <h2>Did you know??</h4>
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, provident ullam dolore, nesciunt officiis voluptatibus
+                autem excepturi repellendus quam accusamus odit atque cumque sed iusto nostrum saepe quidem? Omnis, perferendis!</h2>
+
+            </div>
 
         </section>
 
-        <div class="end-info-container">
-            <h4>Provided by Nasa</h4>
-            <small id="copyright"></small>
-            <p id="date"></p>
-        </div>
+      
 
 
-        <!-- Description of video or text -->
 
-        
-    </section>
 
-    
+
+
         <!-- adding out scripts -->
         <script type="" src="apiKey.js"></script>
         <script type="" src="app.js"></script>
+        <script type="" src="FactData.js"></script>
         <!-- <script type="" src="MarsRovers.js"></script>  -->
+
+
+
 </body>
 
 </html>
