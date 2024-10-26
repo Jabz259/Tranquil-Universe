@@ -31,13 +31,91 @@ displayFact(randomFact());
 
 
 
+function peopleInSpace() {
+
+    const baseUrl = "https://corquaid.github.io/international-space-station-APIs/JSON/people-in-space.json";
+    fetch(baseUrl)
+        .then(response => response.json())
+            .then(json => {
+                console.log(json);
+                // displayAstronautName(json);
+                ssInfo(json);
+                displayAstronautNumber(json);
+    });
+
+}
+
+
+
+function displayAstronautNumber(data) {
+    //get the total number of astronauts from https://corquaid.github.io/international-space-station-APIs/JSON/people-in-space.json API
+    const astronautNumber = data.number; 
+    //select html element that we want to display data
+    const astronautElement = document.querySelector("#astro-number")
+    //display data
+    astronautElement.innerHTML = `There are currently ${astronautNumber} astronauts in space`; 
+
+
+    console.log("People in space rn = " + astronautNumber);
+}
+
+    function ssInfo(data) {
+
+    const astronaut = data.people; 
+    let iss = 0;
+    let tss = 0;
+    let unknown = 0;
+
+    astronaut.forEach(element => {
+        const spaceStation = element.iss;
+        if(!spaceStation) {
+            tss++;
+        } else {
+            iss++;
+        } 
+        console.log ("Problem finding data")
+        // console.log(element.name);
+    });
+
+
+    const issElement = document.querySelector("#iss-number")
+    const tssElement = document.querySelector("#tss-number")
+
+    issElement.innerHTML = `International Space Station: ${iss} Astronauts`;
+    tssElement.innerHTML = `Tiangong Space Station: ${tss} Astronauts`;
+
+}
+
+
+// function displayAstronautName(data) {
+
+//     const astronaut = data.people; 
+
+//     astronaut.forEach(element => {
+//         console.log(element.name);
+//     });
+
+
+// }
+
+function displayAstronautCraft(data) {
+
+    const astronaut = data.people; 
+
+    console.log(data)
+
+    // astronaut.forEach(element => {
+    //     // console.log(element.name);
+    // });
+
+
+}
+
+peopleInSpace();
 
 
 
 
-//  factArr.forEach(element => {
-//     if(element ==)
 
-//    console.log(factArr[element])
 
-//  });
+
