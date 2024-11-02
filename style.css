@@ -1,7 +1,23 @@
-.first-row{
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.row{
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
+}
 
+.space-race{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: blue;
+    min-height: 450px;
+    margin: 3px;
 }
 
 .card-container{
@@ -11,13 +27,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0;
-   
+    margin: 3px;
+    padding: 10px;
 }
 
 .fact-container{
-    display: flex;
-    flex-direction: column;
     text-align: center;
     height: 40%;
 }
@@ -101,6 +115,7 @@ h2{
 
 h4{
     margin: auto;
+    
 }
 
 p {
