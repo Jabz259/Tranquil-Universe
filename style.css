@@ -10,14 +10,24 @@
     margin-bottom: 5px;
 }
 
-.space-race{
+.space-race-container{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     background-color: blue;
-    min-height: 450px;
     margin: 3px;
+    height: 450px;
+}
+
+.space-race-container > img{
+    object-fit: cover;
+    height: inherit;
+    width: 100%;
+}
+
+.card-info{
+    position: absolute;
 }
 
 .card-container{
@@ -30,6 +40,26 @@
     margin: 3px;
     padding: 10px;
 }
+
+
+.universe-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: blue;
+    margin: 3px;
+    height: 450px;
+    position: relative; /* Added to position child elements properly */
+    overflow: hidden; /* Ensures that no child elements overflow the container */
+}
+
+.universe-container > img{
+    object-fit: cover;
+    height: inherit;
+    width: 100%;
+}
+
 
 .fact-container{
     text-align: center;
